@@ -1,19 +1,118 @@
-.body{
+body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    height: 100vh;
+    background: hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0;
+    font-weight: 800;
+}
+h5{
+    margin: 0;
+    padding-bottom: 0.5em;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 18px;
+    border-bottom-right-radius: 160px;
+    padding: 2em;
 }
 .flex_input{
     display: flex;
+    align-items: baseline;
+    gap: 1.5em;
+}
+.line_button{
+    display: flex;
     align-items: center;
-    padding: 1em;
-    gap: 1em;
+    flex-direction: row;
+    
+}
+.h_line{
+    border-bottom: 1.2px solid  hsl(0, 0%, 86%);
+    width: 460px;
+}
+img{
+    width: 2em;
+    height: 2.5em;
+    padding: 0.7em;
+}
+button{
+    border: none;
+    border-radius: 60px;
+    background-color: hsl(259, 100%, 65%);
+}
+::placeholder{
+    color: hsl(0, 0%, 86%);
+}
+.results{
+    font-size: 32px;
+    font-style: italic;
+}
+.flex_day{
+    display: flex;
+    gap: 0.2em;
+}
+.flex_input_day{
+    display: flex;
+    flex-direction: column;
 }
 .day{
-    width: 100%;
-    padding: 0.8em 1em;
-    font-size: 105%;
+    max-width: 82px;
+    padding: 0.6em 0.7em;
+    font-size: 120%;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-weight: 800;
 }
-
+.flex_input_day h5{
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+}
+.flex_month{
+    display: flex;
+    gap: 0.2em;
+}
+.month{
+    max-width: 82px;
+    padding: 0.6em 0.7em;
+    font-size: 120%;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-weight: 800;
+}
+.flex_input_month h5{
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+}
+.flex_year{
+    display: flex;
+    gap: 0.2em;
+}
+.year{
+    max-width: 82px;
+    padding: 0.6em 0.7em;
+    font-size: 120%;
+    border-radius: 6px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-weight: 800;
+}
+.flex_input_year h5{
+    color: hsl(0, 1%, 44%);
+    font-size: 10px;
+}
+.number{
+    color: hsl(259, 100%, 65%);
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
