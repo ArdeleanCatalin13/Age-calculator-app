@@ -115,6 +115,15 @@ button{
 .number{
     color: hsl(259, 100%, 65%);
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+#nameError {
+    display: none;
+    font-size: 0.8em;
+  }
+  
+  #nameError.visible {
+    display: block;
+  }
+  
+  input.invalid {
+    border-color: red;
+  }

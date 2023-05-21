@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Age calculator app</title>
 </head>
@@ -16,32 +17,35 @@
     <div class="flex_input">
       <div class="flex_input_day">
         <h5>DAY</h5>
-        <input type="text" class="day" placeholder="DD">
+        <input type="text" class="day" id = "input_day" placeholder="DD">
+        <span role="alert" id="nameError" aria-hidden="true">
+          Please enter day
+        </span>
       </div>
       <div class="flex_input_month">
         <h5>MONTH</h5>
-        <input type="text" class="month" placeholder="MM">
+        <input type="text" class="month" id = "input_month" placeholder="MM">
       </div>
       <div class="flex_input_year">
         <h5>YEAR</h5>
-        <input type="text" class="year" placeholder="YYYY">
+        <input type="text" class="year" id = "input_year" placeholder="YYYY">
       </div>
     </div>
     <div class="line_button">
       <div class="h_line"></div>
-      <button><img src="assets/images/icon-arrow.svg" alt="icon-arrow"></button>
+      <button id="button"><img src="assets/images/icon-arrow.svg" alt="icon-arrow"></button>
     </div>
     <div class="results">
       <div class="flex_day">
-        <h1 class="number">- -</h1>
+        <h1 class="number" id="output_year">- -</h1>
         <h1 class="text">years</h1>
       </div>
       <div class="flex_month">
-        <h1 class="number">- -</h1>
+        <h1 class="number" id="output_month">- -</h1>
         <h1 class="text">months</h1>
       </div>
       <div class="flex_year">
-        <h1 class="number">- -</h1>
+        <h1 class="number" id="output_day">- -</h1>
         <h1 class="text">days</h1>
       </div>
     </div>
